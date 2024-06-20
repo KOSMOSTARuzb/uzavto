@@ -177,7 +177,7 @@ function generateContract(contract_code) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://savdo.uzavtosanoat.uz/uzavto_contract/generate?contract_code='+contract_code.toString(), true);
     
-    xhr.setRequestHeader('Accept', '*/*');
+    xhr.setRequestHeader('Accept', 'application/json, text/plain, */*');
     xhr.setRequestHeader('oauth2_token', window.token);
     xhr.setRequestHeader('priority', 'u=1, i');
     
