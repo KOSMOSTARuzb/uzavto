@@ -1,0 +1,233 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #052001;
+  color: #fff;
+}
+* {box-sizing: border-box;}
+
+
+#mainContext {
+    padding: 25px;
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    align-items: center;
+}
+#status {
+    top: 0;
+    color: white;
+    height: 100%;
+    font-size: 200%;
+    align-content: center;
+}
+#loginButton {
+    top: 0;
+    float: right;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    height: 100%;
+}
+#loginDiv {
+    background: #444;
+    display: none;
+    padding: 10px;
+}
+
+
+#captchaImage {
+    background-color: white;
+}
+#models {
+    text-align: left;
+}
+
+.collapsible {
+  background-color: #3f8b3e;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active{
+  background-color: #2C6D2C;
+}
+
+.collapsible:hover {
+  background-color: #277927;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.collapsed {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #2d3b2e;
+}
+
+
+
+.colorButton {
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  outline-width: 3px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 101; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #292929dd;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  padding: 16px;
+  text-align: left;
+  background-color: #07270b;
+  margin: 5% auto 5% auto; /* 5% from the top, 5% from the bottom and centered */
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+
+.region {
+  background-color: #3f8b3e;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.activeregion{
+  background-color: #2C6D2C;
+}
+
+.region:hover {
+  background-color: #277927;
+}
+
+.region:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeregion:after {
+  content: "\2212";
+}
+
+.collapsedregion {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #2d3b2e;
+}
+
+.buyButton {
+  background-color: #277927;
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  outline-width: 3px;
+}
+.mybutton {
+  background-color:#4bf150;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}

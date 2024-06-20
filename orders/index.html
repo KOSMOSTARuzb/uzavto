@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local UZAM Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="topBar">
+        <span id="status">Loading...</span>
+    </div>
+    <div id="mainContext">
+        <button class="mybutton" onclick="getOrders();">Load orders</button>
+        <div id="list" style="margin-top: 50px;">
+            <button class="collapsible">
+                <span class="detail" style="background-color: #030000;">MALIBU-2</span>
+                <span class="detail"
+                    style="background-color: #030000;">
+                    MALBDB 9AT LTZ
+                </span>
+                <span class="detail"
+                    style="background-color: #030000;">
+                    Mosaic Black Metallic
+                </span>
+                <span class="detail"
+                    style="background-color: #f00;color:#fff">
+                    419 000 960 so'm
+                </span>
+            </button>
+            <div class="collapsed">
+                <p><b>Contract: 1-264-2024-03020UZ</b></p>
+                <p>Dealer: "EUROAZIYA MOTORS" MCHJ</p>
+                <p>Queue: 128</p>
+                <p>Ordered: 01.06.2024</p>
+                VIN number: 
+                State: N <code class="col-sm-24 bg-blue-hoki bg-font-blue-hoki text-center">AP:New</code><br>Kind: C
+                <br><b class="detail" style="background-color: #090;">Contract generated</b><b class="detail" style="background-color: #900;">Contract not approved</b><b class="detail" style="background-color: #900;">Dealer not approved</b><p>Order kind: S</p>
+                <b>Price: 419 000 960 so'm</b><br>
+                <b>Paid: 0 so'm</b><br>
+                <b>Remaining: 419 000 960 so'm</b><br>
+                <br>Expected date: <b class="detail" style="background-color: #333;">30.06.2024</b> <b class="detail" style="background-color: #900;">209 500 480 so'm</b><br><p><b>UI-AP22:you need to sign contract and pay until 08.06.2024</b></p>
+                <br>
+                <button class="colorButton" onclick=";" style="background-color: #080707; color:#FFFFFF;">Generate contract</button>
+                <br>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

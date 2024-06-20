@@ -1,0 +1,9 @@
+body {
+    background-color: #111;
+    color: white;
+}
+#contentWrapper {
+    display: grid;          /* Enable grid layout */
+    place-items: center;   /* Center both horizontally and vertically */
+  }
+  

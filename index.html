@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local UZAvtoMotors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="topBar">
+        <span id="status">Loading...</span>
+        <button id="loginButton" onclick="onLoginButton()">Login</button>
+    </div>
+    <div id="mainContext">
+        <div id="loginDiv">
+            <h4 id="loginText">Please enter the text you see below</h4>
+            <div id="captchaDiv">
+                <img id="captchaImage" src="captcha.png">
+                <button onclick="refreshCaptcha()">Refresh</button>
+                <br>
+                <input type="text" id="captchaInput" size="7">
+                <button onclick="checkCaptcha()">GO</button>
+            </div>
+        </div>
+        <button class="mybutton" onclick="userInfo()">Reload user</button>
+        <button class="mybutton" onclick="getModels()" style="background-color: #c5f14b;"><b>Load models</b></button>
+
+        <button class="mybutton" onclick="getDealers()">Load dealers</button>
+        <button class="mybutton" onclick="document.getElementById('id01').style.display='block';">Show pop up</button>
+        <button class="mybutton" onclick="window.open('orders/index.html', '_blank');">Orders</button>
+        <div id="models" style="margin-top: 50px;"> 
+        </div>
+    </div>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close popup">&#215;</span>
+        <div class="modal-content">
+            <h3 id="dealertext"></h1>
+            <div id="modal-content">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
