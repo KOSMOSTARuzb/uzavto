@@ -221,8 +221,9 @@ function price(number) {
             formatted = ' ' + formatted; 
         }
         }
-    
         return formatted;
+    }else{
+        return "0";
     }
 }
 function getContrastColor(hexColor) {
