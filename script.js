@@ -171,6 +171,9 @@ function checkCaptcha() {
                         else if (e.status == -2) {
                             clearInterval(ttt);
                             confirm("Попробуйте перезагрузить страницу.-2");
+                        }else{
+                            clearInterval(ttt);
+                            confirm("ERROR: "+ String(e));
                         }
                         loginText.textContent = "ERROR buying...";
                     })
